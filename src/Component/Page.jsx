@@ -132,7 +132,7 @@ const Page = () => {
         onMouseLeave={(e) => MoveItems(e)}
       >
         <div
-          className="recentlyImgContainer w-[400px] border-r-8 border-b-8 bg-white z-[999] rounded-b-xl h-[95vh] flex flex-col gap-11 items-center absolute top-[25px] invisible"
+          className="recentlyImgContainer w-[400px] border-r-8 border-b-8 bg-red-200 z-[999] rounded-b-xl h-[95vh] flex flex-col gap-11 items-center absolute top-[25px] invisible"
           ref={InvisibleContainer}
         >
           <div className="w-full h-[80px] bg-slate-600 rounded mt-9 flex justify-center items-center ">
