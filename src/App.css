@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+.ItemContainer {
+  width: 130px;
+  height: 120px;
+  position: relative;
+  overflow: hidden;
+  padding: 2px;
+}
+.ItemContainer::before {
+  content: "Tap to Show More";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  position: absolute; /* Position the pseudo-element absolutely */
+  top: 100%; /* Start at the bottom */
+  left: 0;
+  height: 100%; /* Make it cover the entire container */
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+  padding: 26px;
+  opacity: 0.6;
+  background-color: #e2e8f0;
+  transition: transform 0.5s ease; /* Transition for transform property */
+  /* z-index: 100; Move the pseudo-element behind the content */
+}
+
+.ItemContainer:hover::before {
+  transform: translateY(-100%); /* Move the pseudo-element to the top */
+}
