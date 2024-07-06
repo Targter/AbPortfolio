@@ -16,11 +16,11 @@ const Navbar = ({ ShowDarkBg, ClickForB1g }) => {
   return (
     <>
       {" "}
-      <div className="dark:bg-[#2B2D42] h-auto w-full overflow-x-hidden fixed z-[999] text-white mb-2">
+      <div className="dark:bg-[#2B2D42] h-auto w-full overflow-x-hidden fixed z-[999] text-white ">
         <nav className="bg-gray-800">
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-0">
-            <div className="relative flex h-16 items-center justify-between">
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <div className="mx-auto max-w-7xl px-2  lg:px-0">
+            <div className="relative flex h-16 items-center md:justify-between justify-evenly md:gap-0 gap-[10px]">
+              <div className="inset-y-0 flex items-center md:hidden ">
                 <button
                   type="button"
                   className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
@@ -62,57 +62,57 @@ const Navbar = ({ ShowDarkBg, ClickForB1g }) => {
                   </svg>
                 </button>
               </div>
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4">
-                    <Link
-                      to="/"
-                      className={`rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700  hover:text-white  ${
-                        ShowDarkBg === 0 ? "dark:bg-gray-900" : ""
-                      }`}
-                      onClick={() => ClickForBg(0)}
-                      aria-current="page"
-                    >
-                      HOME
-                    </Link>
-                    <Link
-                      to="/page1"
-                      className={`rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white ${
-                        ShowDarkBg === 1 ? "dark:bg-gray-900" : ""
-                      }`}
-                      onClick={() => ClickForBg(1)}
-                    >
-                      Skills
-                    </Link>
-                    <Link
-                      to="/page2"
-                      className={`rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white  ${
-                        ShowDarkBg === 2 ? "dark:bg-gray-900" : ""
-                      }`}
-                      onClick={() => ClickForBg(2)}
-                    >
-                      Work Experience
-                    </Link>
-                    <Link
-                      to="/page3"
-                      className={`rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white  ${
-                        ShowDarkBg === 3 ? "dark:bg-gray-900" : ""
-                      }`}
-                      onClick={() => ClickForBg(3)}
-                    >
-                      Projects
-                    </Link>
-                  </div>
+              <div className="md:block hidden ">
+                <div className="detailscontainer w-[300px] h-auto flex justify-evenly items-center  ">
+                  {" "}
+                  <Link
+                    to="/"
+                    className={`rounded-mdtext-sm font-medium text-gray-300 hover:bg-gray-700  hover:text-white  ${
+                      ShowDarkBg === 0 ? "dark:bg-gray-900" : ""
+                    }p-2`}
+                    onClick={() => ClickForBg(0)}
+                    aria-current="page"
+                  >
+                    HOME
+                  </Link>
+                  <Link
+                    to="/page1"
+                    className={`rounded-md  text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white p-2${
+                      ShowDarkBg === 1 ? "dark:bg-gray-900" : ""
+                    }`}
+                    onClick={() => ClickForBg(1)}
+                  >
+                    Skills
+                  </Link>
+                  <Link
+                    to="/page2"
+                    className={`rounded-md  text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white w-auto p-2${
+                      ShowDarkBg === 2 ? "dark:bg-gray-900" : ""
+                    }`}
+                    onClick={() => ClickForBg(2)}
+                  >
+                    Work Experience
+                  </Link>
+                  <Link
+                    to="/page3"
+                    className={`rounded-md text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white p-2 ${
+                      ShowDarkBg === 3 ? "dark:bg-gray-900" : ""
+                    }`}
+                    onClick={() => ClickForBg(3)}
+                  >
+                    Projects
+                  </Link>
                 </div>
               </div>
-              <div className="text-lg font-bold flex  w-[200px] lg:pl-[170px] items-center justify-center">
+              <div className="text-lg font-bold flex w-[200px] items-center justify-center  ">
                 <Link to="/ContactMe">
-                  <span className="w-[200px] h-[30px] pl-3 pr-3 pt-1 rounded-xl font-extrabold text-white text-xl hover:text-3xl">
+                  <span className="w-[200px] h-[30px] pt-1 rounded-xl font-extrabold text-white text-xl hover:text-3xl">
+                    {" "}
                     AbhayBansal
                   </span>
                 </Link>
               </div>
-              <div className="max-w-screen-xl w-1/2 px-4 py-3  ">
+              <div className="max-w-screen-xl lg:px-[55px] py-3  sm:block hidden">
                 <div className="flex justify-end items-center">
                   <ul className="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
                     <li className="w-6 h-6">
@@ -157,7 +157,7 @@ const Navbar = ({ ShowDarkBg, ClickForB1g }) => {
           </div>
 
           <div
-            className={`sm:hidden ${showDropDown ? "" : "hidden"}`}
+            className={`md:hidden ${showDropDown ? "" : "hidden"}`}
             id="mobile-menu"
           >
             <div className="space-y-1 px-2 pb-3 pt-2">
@@ -219,3 +219,13 @@ const Navbar = ({ ShowDarkBg, ClickForB1g }) => {
 };
 
 export default Navbar;
+
+//   <div className="flex lg:items-center lg:justify-start items-stretch sm:justify-start">
+{
+  /* <div className="hidden sm:ml-2 sm:block">
+<div className="flex gap-[20px]">
+
+</div>
+</div>
+</div> */
+}

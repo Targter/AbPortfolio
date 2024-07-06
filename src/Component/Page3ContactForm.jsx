@@ -1,9 +1,56 @@
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
+import { IoMail } from "react-icons/io5";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+
 const Box6container = () => {
   return (
     <>
-      <div className=" w-full h-auto sm:h-screen flex items-center justify-start sm:justify-center text-white bg-black pt-24 pl-2  sm:pl-11 overflow-hidden">
-        <div className="w-10/12 md:w-10/12 h-full flex flex-col md:mt-24 mt-14 ml-5 sm:ml-11 md:ml-24 md:justify-center items-center lg:items-start gap-2 ">
-          <div className="border-2 w-full md:w-[65%] h-11/12  flex flex-col justify-between text-white gap-3 md:gap-0 rounded-2xl items-start ">
+      <div className=" w-full h-screen flex items-center justify-center text-white bg-black pt-24  overflow-hidden">
+        <div className="w-10/12 md:w-10/12 h-full flex flex-col md:mt-24 mt-14  md:justify-center  items-center gap-2 mb-[100px]">
+          <div className="diconbox6 rounded-xl max-w-3xl w-full h-[50px] mb-11 bg-[rgb(45,55,69)] flex justify-center items-center">
+            <div className="flex justify-end items-center">
+              <ul className="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
+                <li className="w-6 h-6">
+                  <a
+                    href="https://www.linkedin.com/in/abhaybansal0003/"
+                    target="_blank"
+                  >
+                    <FaLinkedin
+                      className="w-[100%] h-[100%] text-white hover:dark:bg-slate-600
+                        hover:scale-[1.1]  "
+                    />
+                  </a>
+                </li>
+                <li className="w-6 h-6">
+                  <a href="mailto:bansalabhay00@gmail.com">
+                    <IoMail
+                      className="w-[100%] h-[100%] hover:bg-gray-700 hover:text-white hover:dark:bg-slate-600
+                        hover:scale-[1.1] "
+                    />
+                  </a>
+                </li>
+                <li className="w-6 h-6">
+                  <a href="https://x.com/AbCheckk" target="_blank">
+                    <FaSquareXTwitter
+                      className="w-[100%] h-[100%] hover:bg-gray-700  hover:dark:bg-slate-600
+                        hover:scale-[1.1] hover:text-white"
+                    />
+                  </a>{" "}
+                </li>
+                <li className="w-6 h-6">
+                  <a href="https://github.com/Targter" target="_blank">
+                    <FaGithub
+                      className="w-[100%] h-[100%] hover:bg-gray-700 hover:text-white hover:dark:bg-slate-600
+                        hover:scale-[1.1] "
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="border-2  w-full md:w-[65%] h-11/12  flex flex-col justify-between text-white gap-3 md:gap-0 rounded-2xl items-start ">
             <div className="flex flex-col justify-between gap-3 w-full h-auto bg-gray-800 overflow-hidden rounded-t-2xl p-4">
               <div className="text-sm md:text-lg w-full md:w-9/12">
                 GET IN TOUCH
@@ -70,7 +117,6 @@ const Box6container = () => {
               </button>
             </form>
           </div>
-          <div className="diconbox6"></div>
         </div>
       </div>
     </>

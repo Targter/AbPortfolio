@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 // import { motion } from "framer-motion-3d";
 import { services } from "./ALLData.js";
 import { fadeIn, textVariant } from "./MotionValue.js";
+
+import { FaCircleArrowDown } from "react-icons/fa6";
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt options={{ max: 45, scale: 1, speed: 450 }}>
     <motion.div
@@ -58,7 +60,7 @@ const About = ({ ClickForBg }) => {
           </motion.div>
         </motion.div>
         <motion.div
-          className="mt-3 lg:w-2/4 w-full md:text-[16px] text-sm text-black text-justify lg:pr-0 pr-2 "
+          className="mt-3 lg:w-2/4 w-full md:text-[16px] text-lg text-black text-justify lg:pr-0 pr-4 lg:pl-0 pl-2 "
           variants={fadeIn("", "", 0.6, 1)}
         >
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
@@ -78,9 +80,10 @@ const About = ({ ClickForBg }) => {
               key={index}
             />
           ))}
-
+        </div>
+        <motion.div className="w-full mt-11 flex justify-center h-[70px]">
           <motion.span
-            className="sideIcon w-[10px] text-5xl  "
+            className="sideIcon w-[10px] text-5xl"
             initial={{ color: "#1e207d", scale: 1 }}
             animate={{ color: ["#1d2529", "#1e207d"], scale: [1.2, 1] }}
             transition={{
@@ -91,11 +94,10 @@ const About = ({ ClickForBg }) => {
             onClick={fun}
           >
             <Link to="/page2">
-              {" "}
-              <FaCircleArrowRight />
+              <FaCircleArrowDown />
             </Link>
           </motion.span>
-        </div>
+        </motion.div>
       </div>
     </>
   );
