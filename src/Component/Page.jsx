@@ -214,23 +214,23 @@ const Page = () => {
         </div>
         <div className="flex flex-wrap justify-center pr-[20px] overflow-auto gap-[10px] box11 bg-pink-50">
           {images.map((image, index) => (
-            <div
-              className="ItemContainer"
-              ref={item}
-              // onMouseEnter={() => setIsHovered(true)}
-              // onMouseLeave={() => setIsHovered(false)}
-              onMouseEnter={() => ContainerShownFunction(image.src)}
-              onMouseLeave={ContainerHideFunction}
-            >
-              <Link to={image.pth} key={index}>
+            <Link to={image.pth} key={index}>
+              <div
+                className="ItemContainer"
+                ref={item}
+                // onMouseEnter={() => setIsHovered(true)}
+                // onMouseLeave={() => setIsHovered(false)}
+                onMouseEnter={() => ContainerShownFunction(image.src)}
+                onMouseLeave={ContainerHideFunction}
+              >
                 <img
                   // id={image.id}
                   src={image.src}
                   ref={fitImg}
                   className="   rounded-lg imgcontainer w-full h-full "
                 />
-              </Link>
-            </div>
+              </div>
+            </Link>
           ))}
         </div>
       </div>
