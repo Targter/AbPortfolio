@@ -276,9 +276,16 @@ const Page = () => {
               </div>
 
               <div className="myinfo w-full h-auto flex justify-center resume mt-[20px] mb-[8px]">
-                <button className="bg-[#2B2D42] h-[50px]  md:w-[200px] w-[150px] rounded-full  lg:text-xl text-sm  font-light hover:bg-slate-700 text-slate-200 hover:text-white transition duration-300 ease-in-out">
-                  Download Resume
-                </button>
+                <a
+                  href="public/AbhayBansalResumeDoc.pdf"
+                  type="submit"
+                  download="AbhayBansalResumeDoc.pdf"
+                >
+                  {" "}
+                  <button className="bg-[#2B2D42] h-[50px]  md:w-[200px] w-[150px] rounded-full  lg:text-xl text-sm  font-light hover:bg-slate-700 text-slate-200 hover:text-white transition duration-300 ease-in-out">
+                    Download Resume
+                  </button>
+                </a>
               </div>
               <div className="md:w-[30%] w-[70%] h-auto text-lg text-center p-0 details ">
                 Enabling me to build comprehensive and efficient web and mobile
