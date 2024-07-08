@@ -13,7 +13,6 @@ import {
   Routes,
   useLocation,
 } from "react-router-dom";
-import { Outlet } from "react-router-dom";
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
@@ -33,21 +32,20 @@ const App = () => {
   };
   return (
     <>
-      {/* <Router>
+      <Router>
         <ScrollToTop />
         <Navbar ShowDarkBg={ShowDarkBg} ClickForB1g={ClickForBg}></Navbar>
         <Routes>
-          <Route path="/" element={<Page />}>
-            <Route path="/Skills" element={<About ClickForBg={ClickForBg} />} />
-            <Route
-              path="/Work-experience"
-              element={<Box3Container ClickForBg={ClickForBg} />}
-            />
-            <Route path="/Projects" element={<Box5Container />} />
-            <Route path="/ContactMe" element={<Box6container />} />
-          </Route>
+          <Route path="/" element={<Page />} />
+          <Route path="Skills" element={<About ClickForBg={ClickForBg} />} />
+          <Route
+            path="Work-experience"
+            element={<Box3Container ClickForBg={ClickForBg} />}
+          />
+          <Route path="Projects" element={<Box5Container />} />
+          <Route path="ContactMe" element={<Box6container />} />
         </Routes>
-      </Router> */}
+      </Router>
 
       {/* <Page></Page> */}
       {/* <Navbar />
@@ -66,8 +64,8 @@ const App = () => {
           <Route path="/ContactMe" element={<Box6container />} />
         </Routes>
       </Router> */}
-      <Navbar />
-      <Outlet></Outlet>
+      {/* <Navbar />
+      <Outlet></Outlet> */}
     </>
   );
 };
