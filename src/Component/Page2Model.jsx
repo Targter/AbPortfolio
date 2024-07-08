@@ -30,10 +30,7 @@ const Ball = (prop) => {
   );
 };
 
-// const BallLoad = lazy(() => import("./ModelBall"));
 const Box4Geometry = ({ imgUrl }) => {
-  // const memoizedBall = useCallback(() => <Ball imgUrl={imgUrl} />, [imgUrl]);
-
   return (
     <>
       <Canvas
@@ -43,19 +40,12 @@ const Box4Geometry = ({ imgUrl }) => {
           preserveDrawingBuffer: true,
         }}
       >
-        {/* <Suspense fallback={<div>LoadingBalls......</div>}> */}
         <ambientLight intensity={0.1} />
         <directionalLight position={[1, 1, 1]} />
-        {/* <Ball imgUrl={imgUrl} /> */}
-        {/* <Suspense fallback={null}>{memoizedBall()}</Suspense> */}
-
-        <OrbitControls enableZoom={false} />
         <Suspense fallback={<CanvasLoader />}>
           <Ball imgUrl={imgUrl} />
+          <OrbitControls enableZoom={false} />
         </Suspense>
-        {/* <OrbitControls enableZoom={false} enableRotate={true} /> */}
-        {/* </Suspense> */}
-        <Preload all />
       </Canvas>
     </>
   );
