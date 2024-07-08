@@ -1,12 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
-
+/* @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Baskervville+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Baskervville+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Baskervville+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Mukta", sans-serif;
-  font-weight: 200;
-  font-style: normal;
+  font-family: "Baskervville SC", serif;
+}
+.FullStack {
+  font-weight: 600;
 }
 .ItemContainer {
   width: 130px;
@@ -29,7 +34,7 @@
   text-align: center;
   border-radius: 8px;
   padding: 26px;
-  opacity: 0.6;
+  opacity: 0.8;
   background-color: #e2e8f0;
   transition: transform 0.5s ease; /* Transition for transform property */
   /* z-index: 100; Move the pseudo-element behind the content */
@@ -37,4 +42,22 @@
 
 .ItemContainer:hover::before {
   transform: translateY(-100%); /* Move the pseudo-element to the top */
+}
+
+.imgcontainer {
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2), 0 -5px 4px rgba(0, 0, 0, 0.2),
+    5px 0 4px rgba(0, 0, 0, 0.2), -5px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.page1skills {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.addfontpage3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }

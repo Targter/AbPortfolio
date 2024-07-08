@@ -47,7 +47,7 @@ const About = ({ ClickForBg }) => {
   return (
     <>
       <div
-        className={`max-w-7xl w-[100%] mx-auto relative z-0 h-4/5 lg:pl-28  pl-2 pt-11 text-black overflow-hidden `}
+        className={`max-w-7xl w-[100%] mx-auto relative z-0 h-4/5 lg:pl-28  pl-2 pt-6 text-black overflow-hidden page1skills `}
       >
         <motion.div
           variants={textVariant()}
@@ -60,16 +60,17 @@ const About = ({ ClickForBg }) => {
           </motion.div>
         </motion.div>
         <motion.div
-          className="mt-3 lg:w-2/4 w-full md:text-[16px] text-lg text-black text-justify lg:pr-0 pr-4 lg:pl-0 pl-2 "
+          className="mt-3 lg:w-[60%] w-full md:text-[16px] text-lg text-black text-justify lg:pr-0 pr-4 lg:pl-0 pl-2 page1skills font-medium"
           variants={fadeIn("", "", 0.6, 1)}
         >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
-          neque quaerat impedit exercitationem rerum? Atque delectus magni dicta
-          beatae sed expedita dignissimos aspernatur minima, dolorum doloribus
-          neque voluptates ipsam velit ducimus at aliquid voluptatem quasi amet
-          iure ipsa quia adipisci facere cum a? Aspernatur recusandae, doloribus
-          temporibus odit sapiente dolores provident hic facere harum similique,
-          magnam animi. Reprehenderit eos, et neque iure aspernatur
+          I am a proficient full stack developer skilled in frontend
+          technologies such as React.js for building interactive user interfaces
+          and Three.js for integrating 3D models into websites. I specialize in
+          creating smooth animations using GSAP and Framer Motion to enhance
+          user experience. On the backend, I excel in Node.js, proficient in
+          developing RESTful APIs, managing databases, and ensuring scalable
+          server architecture. My expertise allows me to deliver end-to-end web
+          applications that are both dynamic and responsive.
         </motion.div>
         <div className="mt-6 flex flex-wrap gap-5 lg:justify-start items-center justify-center pb-2 ">
           {services.map((service, index) => (
@@ -81,7 +82,7 @@ const About = ({ ClickForBg }) => {
             />
           ))}
         </div>
-        <motion.div className="w-full mt-11 flex justify-center h-[70px]">
+        <motion.div className="w-full mt-7 flex justify-center h-[70px] ">
           <motion.span
             className="sideIcon w-[10px] text-5xl"
             initial={{ color: "#1e207d", scale: 1 }}

@@ -63,35 +63,35 @@ const Navbar = ({ ShowDarkBg, ClickForB1g }) => {
                 </button>
               </div>
               <div className="md:block hidden ">
-                <div className="detailscontainer w-[300px] h-auto flex justify-evenly items-center  ">
+                <div className="detailscontainer w-[350px] h-auto flex justify-evenly items-center  ">
                   {" "}
                   <Link
                     to="/"
-                    className={`rounded-mdtext-sm font-medium text-gray-300 hover:bg-gray-700  hover:text-white  ${
+                    className={`rounded-md text-sm font-medium text-gray-300 hover:bg-gray-700  hover:text-white  ${
                       ShowDarkBg === 0 ? "dark:bg-gray-900" : ""
-                    }p-2`}
+                    } p-2`}
                     onClick={() => ClickForBg(0)}
                     aria-current="page"
                   >
-                    HOME
+                    Home
                   </Link>
                   <Link
                     to="/page1"
-                    className={`rounded-md  text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white p-2${
+                    className={`rounded-md  text-sm font-mediu text-gray-300 hover:bg-gray-700  hover:text-white  ${
                       ShowDarkBg === 1 ? "dark:bg-gray-900" : ""
-                    }`}
+                    } p-2`}
                     onClick={() => ClickForBg(1)}
                   >
                     Skills
                   </Link>
                   <Link
                     to="/page2"
-                    className={`rounded-md  text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white w-auto p-2${
+                    className={`rounded-md  text-sm font-medium text-gray-300 hover:bg-gray-700  hover:text-white  ${
                       ShowDarkBg === 2 ? "dark:bg-gray-900" : ""
-                    }`}
+                    } p-2`}
                     onClick={() => ClickForBg(2)}
                   >
-                    Work Experience
+                    Work experience
                   </Link>
                   <Link
                     to="/page3"

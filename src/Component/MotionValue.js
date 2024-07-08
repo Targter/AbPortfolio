@@ -42,37 +42,24 @@ export const slideInFromTop = {
 // import css from "public\texh";
 export const techimg = [
   {
-    name: "Css",
-    imgurl: "css.png",
-  },
-  {
     name: "html",
     imgurl: "html.png",
   },
-
   {
-    name: "Bootstrap",
-    imgurl: "download.png",
-  },
-  {
-    name: "git",
-    imgurl: "git.png",
-  },
-  {
-    name: "figma",
-    imgurl: "figma.png",
+    name: "Css",
+    imgurl: "css.png",
   },
   {
     name: "js",
     imgurl: "javascript.png",
   },
   {
-    name: "mongodb",
-    imgurl: "mongodb.png",
+    name: "Bootstrap",
+    imgurl: "html.png",
   },
   {
-    name: "nodejs",
-    imgurl: "nodejs.png",
+    name: "tailwind",
+    imgurl: "tailwind.png",
   },
   {
     name: "reactjs",
@@ -83,8 +70,21 @@ export const techimg = [
     imgurl: "redux.png",
   },
   {
-    name: "tailwind",
-    imgurl: "tailwind.png",
+    name: "nodejs",
+    imgurl: "nodejs.png",
+  },
+  {
+    name: "mongodb",
+    imgurl: "mongodb.png",
+  },
+
+  {
+    name: "git",
+    imgurl: "git.png",
+  },
+  {
+    name: "figma",
+    imgurl: "figma.png",
   },
 ];
 
