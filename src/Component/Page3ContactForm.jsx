@@ -61,14 +61,15 @@ const Box6container = () => {
             </div>
             <form
               className="flex  p-8 pr-1 pt-4 flex-col w-11/12 h-3/4 sm:pt-2 gap-2 sm:gap-3 md:gap-4"
-              action="https://api.web3forms.com/submit"
+              action="mailto:bansalabhay00@gmail.com"
               method="POST"
+              encType="text/plain"
             >
-              <input
+              {/* <input
                 type="hidden"
                 name="access_key"
                 value="4ca22538-4460-4a05-8a57-d4d01c53d3f7"
-              />
+              /> */}
               <label
                 htmlFor="name"
                 className="text-xs sm:text-sm md:text-xl font-bold "
@@ -112,6 +113,8 @@ const Box6container = () => {
               <button
                 className="mt-3 ml-0 lg:ml-3 w-full h-11 rounded-md bg-gray-800 hover:bg-gray-700 hover:text-white"
                 type="submit"
+                // onClick={form}
+                // action="mailto:bansalabhay00@gmail.com"
               >
                 Send
               </button>

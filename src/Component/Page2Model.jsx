@@ -36,9 +36,9 @@ const Box4Geometry = ({ imgUrl }) => {
       <Canvas
         frameloop="demand"
         dpr={[1, 2]}
-        gl={{
-          preserveDrawingBuffer: true,
-        }}
+        // gl={{
+        //   preserveDrawingBuffer: true,
+        // }}
       >
         <ambientLight intensity={0.1} />
         <directionalLight position={[1, 1, 1]} />
