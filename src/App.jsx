@@ -36,16 +36,16 @@ const App = () => {
           <Route exact path="/" element={<Page />} />
           <Route
             exact
-            path="Skills"
+            path="/Skills"
             element={<About ClickForBg={ClickForBg} />}
           />
           <Route
             exact
-            path="Work-experience"
+            path="/Work-experience"
             element={<Box3Container ClickForBg={ClickForBg} />}
           />
-          <Route exact path="Projects" element={<Box5Container />} />
-          <Route exact path="ContactMe" element={<Box6container />} />
+          <Route exact path="/Projects" element={<Box5Container />} />
+          <Route exact path="/ContactMe" element={<Box6container />} />
         </Routes>
       </Router>
     </>
