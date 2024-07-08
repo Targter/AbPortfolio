@@ -6,14 +6,13 @@ import About from "./Component/Page1";
 import Box3Container from "./Component/Page2";
 import Box5Container from "./Component/Page3";
 import Box6container from "./Component/Page3ContactForm";
-import { Navigate, Outlet } from "react-router-dom";
 import {
   BrowserRouter as Router,
   Route,
   Routes,
   useLocation,
 } from "react-router-dom";
-
+import { Outlet } from "react-router-dom";
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
@@ -22,11 +21,6 @@ const ScrollToTop = () => {
   }, [pathname]);
 
   return null;
-};
-
-const PrivateRoute = () => {
-  let auth = { token: true }; // Replace with your authentication logic
-  return auth.token ? <Outlet /> : <Navigate to="/" />;
 };
 
 //
@@ -38,12 +32,11 @@ const App = () => {
   };
   return (
     <>
-      <Router>
+      {/* <Router>
         <ScrollToTop />
         <Navbar ShowDarkBg={ShowDarkBg} ClickForB1g={ClickForBg}></Navbar>
         <Routes>
           <Route path="/" element={<Page />}>
-            {/* <Route path="/" element={<Page />} /> */}
             <Route path="/Skills" element={<About ClickForBg={ClickForBg} />} />
             <Route
               path="/Work-experience"
@@ -53,7 +46,11 @@ const App = () => {
             <Route path="/ContactMe" element={<Box6container />} />
           </Route>
         </Routes>
-      </Router>
+      </Router> */}
+
+      {/* <Page></Page> */}
+      <Navbar />
+      <Outlet></Outlet>
     </>
   );
 };
