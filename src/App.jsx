@@ -6,6 +6,7 @@ import About from "./Component/Page1";
 import Box3Container from "./Component/Page2";
 import Box5Container from "./Component/Page3";
 import Box6container from "./Component/Page3ContactForm";
+// import { redirect } from "react-router-dom";
 import {
   BrowserRouter as Router,
   Route,
@@ -49,8 +50,22 @@ const App = () => {
       </Router> */}
 
       {/* <Page></Page> */}
-      <Navbar />
-      <Outlet></Outlet>
+      {/* <Navbar />
+      <Outlet></Outlet> */}
+      <Router>
+        <ScrollToTop />
+        <Navbar ShowDarkBg={ShowDarkBg} ClickForB1g={ClickForBg} />
+        <Routes>
+          <Route path="/" element={<Page />} />
+          <Route path="/Skills" element={<About ClickForBg={ClickForBg} />} />
+          <Route
+            path="/Work-experience"
+            element={<Box3Container ClickForBg={ClickForBg} />}
+          />
+          <Route path="/Projects" element={<Box5Container />} />
+          <Route path="/ContactMe" element={<Box6container />} />
+        </Routes>
+      </Router>
     </>
   );
 };

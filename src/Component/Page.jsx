@@ -236,7 +236,7 @@ const Page = () => {
             ></div>
           </div>
           <div
-            className="w-full flex flex-row overflow-hidden text-black justify-center items-start  "
+            className="w-full flex flex-row overflow-hidden text-black justify-center items-start  bg-red-50"
             id="Home"
           >
             <div className="h-auto w-7xl flex mx-auto flex-col justify-center items-center text-center mb-5 ">
