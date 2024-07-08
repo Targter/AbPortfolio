@@ -103,7 +103,7 @@ const Box3Container = ({ ClickForBg }) => {
               ))}
             </VerticalTimeline>
           </div>
-          <Page2ModelContainer></Page2ModelContainer>
+          {/* <Page2ModelContainer></Page2ModelContainer> */}
         </motion.div>
 
         <motion.span
