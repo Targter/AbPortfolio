@@ -26,7 +26,7 @@ const ProjectCard = ({
         }}
         className="p-5 lg:rounded-2xl rounded-xl lg:w-[350px] w-[250px] bg-[rgb(21 16 48)] bg-[rgb(45,55,69)] lg:flex-none flex flex-col lg:items-start items-center overflow-hidden h-[450px]"
       >
-        <div className="relative lg:w-[80%] w-[80px] lg:h-[120px] h-[100px]  flex gap-4">
+        <div className="relative lg:w-[80%] w-[120px] lg:h-[120px] h-[120px]  flex gap-4">
           <div
             onClick={() => window.open(topath, "_blank")}
             className="hover:scale-[1.1]"
@@ -34,7 +34,7 @@ const ProjectCard = ({
             <img
               src={image}
               alt="project_image"
-              className="w-[120px] h-[120px] object-cover rounded-2xl overflow-hidden "
+              className="lg:w-[120px] lg:h-[120px] h-[80px] w-[80px] object-cover rounded-2xl overflow-hidden "
             />
           </div>
 
