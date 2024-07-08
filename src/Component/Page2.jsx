@@ -117,7 +117,7 @@ const Box3Container = ({ ClickForBg }) => {
           }}
           onClick={fun2}
         >
-          <Link to="/page3">
+          <Link to="/Projects">
             <FaCircleArrowDown />
           </Link>
         </motion.span>

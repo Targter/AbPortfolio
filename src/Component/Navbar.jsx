@@ -76,7 +76,7 @@ const Navbar = ({ ShowDarkBg, ClickForB1g }) => {
                     Home
                   </Link>
                   <Link
-                    to="/page1"
+                    to="/Skills"
                     className={`rounded-md  text-sm font-mediu text-gray-300 hover:bg-gray-700  hover:text-white  ${
                       ShowDarkBg === 1 ? "dark:bg-gray-900" : ""
                     } p-2`}
@@ -85,7 +85,7 @@ const Navbar = ({ ShowDarkBg, ClickForB1g }) => {
                     Skills
                   </Link>
                   <Link
-                    to="/page2"
+                    to="/Work-experience"
                     className={`rounded-md  text-sm font-medium text-gray-300 hover:bg-gray-700  hover:text-white  ${
                       ShowDarkBg === 2 ? "dark:bg-gray-900" : ""
                     } p-2`}
@@ -94,7 +94,7 @@ const Navbar = ({ ShowDarkBg, ClickForB1g }) => {
                     Work experience
                   </Link>
                   <Link
-                    to="/page3"
+                    to="/Projects"
                     className={`rounded-md text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white p-2 ${
                       ShowDarkBg === 3 ? "dark:bg-gray-900" : ""
                     }`}
@@ -175,7 +175,7 @@ const Navbar = ({ ShowDarkBg, ClickForB1g }) => {
                 HOME
               </Link>
               <Link
-                to="/page1"
+                to="/Skills"
                 className={`block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white  ${
                   ShowDarkBg === 1 ? "dark:bg-gray-900" : ""
                 }`}
@@ -187,7 +187,7 @@ const Navbar = ({ ShowDarkBg, ClickForB1g }) => {
                 Skills
               </Link>
               <Link
-                to="/page2"
+                to="/Work-experience"
                 className={`block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white  ${
                   ShowDarkBg === 2 ? "dark:bg-gray-900" : ""
                 }`}
@@ -199,7 +199,7 @@ const Navbar = ({ ShowDarkBg, ClickForB1g }) => {
                 Work Experience
               </Link>
               <Link
-                to="/page3"
+                to="/Projects"
                 className={`block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white  ${
                   ShowDarkBg === 3 ? "dark:bg-gray-900" : ""
                 }`}

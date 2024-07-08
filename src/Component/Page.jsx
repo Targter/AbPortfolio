@@ -116,7 +116,7 @@ const Page = () => {
     {
       id: 1,
       src: "./db.jpeg",
-      pth: "page1",
+      pth: "Skills",
       name: "Myinfo",
       descriptions:
         "As full-stack developer with extensive experience in web development, I aim to leverage my expertise in both frontend and backend technologies to contribute to innovative projects that enhance user experience and drive business growth I seek a challenging position where I can apply my skills in creating robust and scalable web applications My ultimate goal is to drive business growth by developing high-quality web applications that meet user needs and exceed expectations",
@@ -126,7 +126,7 @@ const Page = () => {
     {
       id: 2,
       src: "/workexperienc.png",
-      pth: "page2",
+      pth: "Work-experience",
       name: "WorkExperience ",
       descriptions: `
   <h3>Development :</h3>
@@ -158,7 +158,7 @@ const Page = () => {
     {
       id: 3,
       src: "/projects.png",
-      pth: "page3",
+      pth: "Projects",
       name: "Projects",
       descriptions:
         "I have extensive experience in both frontend and backend development, having completed multiple projects in these areas. My expertise includes integrating interactive 3D models into websites using Three.js, enhancing user experience with scrolling animations using GSAP and Framer Motion. On the backend, I have developed several projects, leveraging my comprehensive understanding of backend technologies",

@@ -94,7 +94,7 @@ const About = ({ ClickForBg }) => {
             }}
             onClick={fun}
           >
-            <Link to="/page2">
+            <Link to="/Work-experience">
               <FaCircleArrowDown />
             </Link>
           </motion.span>
