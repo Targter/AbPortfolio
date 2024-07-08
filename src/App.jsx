@@ -42,8 +42,8 @@ const App = () => {
         <ScrollToTop />
         <Navbar ShowDarkBg={ShowDarkBg} ClickForB1g={ClickForBg}></Navbar>
         <Routes>
-          <Route element={<PrivateRoute />}>
-            <Route path="/" element={<Page />} />
+          <Route path="/" element={<Page />}>
+            {/* <Route path="/" element={<Page />} /> */}
             <Route path="/Skills" element={<About ClickForBg={ClickForBg} />} />
             <Route
               path="/Work-experience"
