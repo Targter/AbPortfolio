@@ -52,7 +52,7 @@ const App = () => {
       {/* <Page></Page> */}
       {/* <Navbar />
       <Outlet></Outlet> */}
-      <Router>
+      {/* <Router>
         <ScrollToTop />
         <Navbar ShowDarkBg={ShowDarkBg} ClickForB1g={ClickForBg} />
         <Routes>
@@ -65,7 +65,9 @@ const App = () => {
           <Route path="/Projects" element={<Box5Container />} />
           <Route path="/ContactMe" element={<Box6container />} />
         </Routes>
-      </Router>
+      </Router> */}
+      <Navbar />
+      <Outlet></Outlet>
     </>
   );
 };
