@@ -279,7 +279,7 @@ const Page = () => {
                 <a
                   href="public/AbhayBansalResumeDoc.pdf"
                   type="submit"
-                  download="AbhayBansalResumeDoc.pdf"
+                  download="public/AbhayBansalResumeDoc.pdf"
                 >
                   {" "}
                   <button className="bg-[#2B2D42] h-[50px]  md:w-[200px] w-[150px] rounded-full  lg:text-xl text-sm  font-light hover:bg-slate-700 text-slate-200 hover:text-white transition duration-300 ease-in-out">
