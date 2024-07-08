@@ -6,6 +6,7 @@ import About from "./Component/Page1";
 import Box3Container from "./Component/Page2";
 import Box5Container from "./Component/Page3";
 import Box6container from "./Component/Page3ContactForm";
+import { Navigate, Outlet } from "react-router-dom";
 import {
   BrowserRouter as Router,
   Route,
@@ -22,6 +23,14 @@ const ScrollToTop = () => {
 
   return null;
 };
+
+const PrivateRoute = () => {
+  let auth = { token: true }; // Replace with your authentication logic
+  return auth.token ? <Outlet /> : <Navigate to="/" />;
+};
+
+//
+
 const App = () => {
   const [ShowDarkBg, SetDarkBg] = useState([]);
   const ClickForBg = (arr) => {
@@ -33,19 +42,16 @@ const App = () => {
         <ScrollToTop />
         <Navbar ShowDarkBg={ShowDarkBg} ClickForB1g={ClickForBg}></Navbar>
         <Routes>
-          <Route exact path="/" element={<Page />} />
-          <Route
-            exact
-            path="/Skills"
-            element={<About ClickForBg={ClickForBg} />}
-          />
-          <Route
-            exact
-            path="/Work-experience"
-            element={<Box3Container ClickForBg={ClickForBg} />}
-          />
-          <Route exact path="/Projects" element={<Box5Container />} />
-          <Route exact path="/ContactMe" element={<Box6container />} />
+          <Route element={<PrivateRoute />}>
+            <Route path="/" element={<Page />} />
+            <Route path="/Skills" element={<About ClickForBg={ClickForBg} />} />
+            <Route
+              path="/Work-experience"
+              element={<Box3Container ClickForBg={ClickForBg} />}
+            />
+            <Route path="/Projects" element={<Box5Container />} />
+            <Route path="/ContactMe" element={<Box6container />} />
+          </Route>
         </Routes>
       </Router>
     </>
